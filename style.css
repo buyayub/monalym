@@ -1,0 +1,110 @@
+body {
+	font-family: 'IM Fell English SC', serif;
+	color: white;
+	background: black;
+	height: 100vh;
+	padding: 0px;
+	margin: 0px;
+}
+
+ul {
+	list-style-type: none;	
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 16px;
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	font-size: 18px;
+}
+
+header {
+	height: 32px;
+	padding-top: 32px;
+}
+
+main {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	height: calc(100vh - 64px);
+	align-items: center;
+}
+
+#landing_image {
+	border: 1px white solid;
+	height: 80vh;
+	filter: brightness(0.8);
+	transform: scaleX(-1);
+}
+
+#landing_image:hover{
+	cursor: pointer;
+	transition: 0.3s;
+	filter: brightness(0.7);
+}
+
+#landing_side_background {
+	z-index: -3;
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: end;
+}
+
+#landing_side_background img {
+	width: 50%;
+	filter: blur(6px) brightness(0.2);
+	bottom: -10px;
+}
+
+article {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 250px;
+	text-align: center;
+}
+
+a {
+	color: inherit;
+	transition: 0.3s;
+	text-decoration: none;
+	color: grey;
+}
+
+a:hover {
+	transition: 0.3s;
+	color: white;
+}
+
+
+p {
+	font-size: 18px;
+	color: lightgrey;
+}
+
+#wisps {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+	filter: blur(1px);
+	z-index: -1;
+}
+
+iframe {
+	visibility: hidden;
+}

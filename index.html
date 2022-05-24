@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Why do you forget?</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet"> 
+		<link rel="stylesheet" href="style.css">
+		<script src="sparticles.min.js"></script>
+		<script defer>
+			window.onload = function () {
+				let options = {
+				 "composition":"source-over",
+				 "count":262,
+				 "speed":10,
+				 "parallax":8.2,
+				 "direction":0,
+				 "xVariance":2,
+				 "yVariance":2,
+				 "rotate":true,
+				 "rotation":1,
+				 "alphaSpeed":10,
+				 "alphaVariance":1,
+				 "minAlpha":0,
+				 "maxAlpha":1,
+				 "minSize":4,
+				 "maxSize":10,
+				 "style":"stroke",
+				 "bounce":false,
+				 "drift":3.9,
+				 "glow":4,
+				 "twinkle":true,
+				 "color":["#ADADAD"],
+				 "shape":"line",
+				 "imageUrl":""
+				}
+				let node = document.querySelector("#wisps")
+				let mySparticles = new Sparticles(node, options);
+
+				var audio = new Audio('adlibitum.mp3');
+				audio.loop = true;
+				audio.volume = 0.2;
+				document.querySelector("#landing_image").onclick = () => {
+					if (audio.paused){audio.play()}
+					else {audio.pause()}
+				};
+			}
+		</script>
+	</head>
+	<body>
+		<div id="landing_side_background">
+				<img src="side.png">
+				<img src="side.png">
+		</div>
+		<div id="wisps">
+		</div>
+		<header>		
+			<nav>
+				<ul>
+					<li><a href="#">Initiation</a></li>
+					<li><a href="#">Scripture</a></li>
+					<li><a href="#">The Divine Pursuits</a></li>
+					<li><a href="#">Lym's Island</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main id="landing">
+			<article>
+				<h2>MON</h2>
+				<p>Omnipresent in sense and thought, it let the aware see and follow, while the animals stray. Don't be stuck to ego, identity, punishment and reward.</p>
+			</article>
+			<section>
+				<img id="landing_image" src="main.jpg">
+			</section>
+			<article>
+				<h2>LYM</h2>
+				<p>I hear you cry softly. You're lost and I understand, I do, and there's nothing wrong with how you feel, but if you no longer wish to be alone then please talk to me.</p>
+			</article>
+		</main>
+	</body>
+</html>
