@@ -1,5 +1,5 @@
 body {
-	font-family: 'IM Fell English SC', serif;
+	font-family: 'IM Fell English', serif;
 	color: white;
 	background: black;
 	height: 100vh;
@@ -105,6 +105,83 @@ p {
 	z-index: -1;
 }
 
-iframe {
-	visibility: hidden;
+#lym {
+	display: flex;
+	flex-direction: row;
+	align-items: start;
+	justify-content: space-evenly;
+}
+
+#lym-profile{
+	max-width: 50vw;
+	width: 650px;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	text-align: left;
+}
+
+#lym-profile > * {
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+#lym-profile-head {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	text-align: left;
+}
+
+#lym-profile img {
+	width: 256px;
+	height: 256px;
+	border: 1px white solid;
+	filter: brightness(0.8);
+}
+
+#lym-profile-description p {
+	font-size: 16px;
+}
+
+#lym-profile-description {
+	padding: 16px;
+	padding-left: 32px;
+}
+
+#lym-profile-title > * {
+	padding: 0px;
+	margin: 0px;
+}
+
+#lym-profile-title > p {
+	padding: 0px;
+	margin: 0px;
+	font-style: italic;
+}
+
+aside {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.article-list {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.article-list > * {
+	margin: 0px;
+	padding: 0px;
+}
+
+h1 {
+	font-size: 32px;
+}
+
+h2 > a {
+	color: white;
+	text-decoration: underline;
 }

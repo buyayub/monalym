@@ -5,7 +5,7 @@
 		<meta name="description" content="Granted consciousess, you breathe through Mon, and yet you insist on suffocating."> 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet"> 
 		<link rel="stylesheet" href="style.css">
 		<script src="sparticles.min.js"></script>
 		<script defer>
@@ -40,7 +40,7 @@
 
 				var audio = new Audio('adlibitum.mp3');
 				audio.loop = true;
-				audio.volume = 0.2;
+				audio.volume = 0.1;
 				document.querySelector("#landing_image").onclick = () => {
 					if (audio.paused){audio.play()}
 					else {audio.pause()}
@@ -58,24 +58,19 @@
 		<header>		
 			<nav>
 				<ul>
-					<li><a href="#">Initiation</a></li>
-					<li><a href="#">Scripture</a></li>
-					<li><a href="#">The Divine Pursuits</a></li>
-					<li><a href="#">Lym's Island</a></li>
+					<li><a href="/">Home</a></li>
 				</ul>
 			</nav>
 		</header>
 		<main id="landing">
 			<article>
 				<h2>MON</h2>
-				<p>Omnipresent in sense and thought, it let the aware see and follow, while the animals stray. Don't be stuck to ego, identity, punishment and reward.</p>
 			</article>
 			<section>
 				<img id="landing_image" src="main.jpg">
 			</section>
 			<article>
-				<h2>LYM</h2>
-				<p>I hear you cry softly. You're lost and I understand, I do, and there's nothing wrong with how you feel, but if you no longer wish to be alone then please talk to me.</p>
+				<h2><a href="/lym.html">LYM</a></h2>
 			</article>
 		</main>
 	</body>
